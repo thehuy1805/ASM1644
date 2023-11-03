@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 var productSchema = new mongoose.Schema({
     ID: {
         type: String,
@@ -18,8 +17,6 @@ var productSchema = new mongoose.Schema({
     },
     Description: {
         type: String
-    }
-})
-
-
+    },
+});
 mongoose.model('Product', productSchema);

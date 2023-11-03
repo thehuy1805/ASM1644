@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const Product = mongoose.model('Product');
 const router = express.Router();
 
+
 router.get("/", (req, res) => {
     res.render("product/addOrEditProduct", {
         viewTitle: "Insert Product"

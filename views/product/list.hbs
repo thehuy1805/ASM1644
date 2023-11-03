@@ -9,6 +9,12 @@
     </a>
     
 </h3>
+<div class="search-container">
+    <form action="/product/list" method="get">
+        <input type="text" name="search" placeholder="Search for products">
+        <button type="submit">Search</button>
+    </form>
+</div>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -28,7 +34,6 @@
             <td>{{this.Category}}</td>
             <td>{{this.Price}}</td>
             <td>{{this.Description}}</td>
-            
             <td>
                 <a href="/product/{{this._id}}">
                     <i class="fas fa-edit" aria-hidden="true"></i>
